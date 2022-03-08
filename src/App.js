@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Animations from "./components/Animation/Animations";
+import Qa from "./components/QA/Qa";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='min-h-screen flex items-center justify-center bg-gradient-to-b from-violet to-myBlue-200
+    font-kumbh text-sm'>
+        <section className='bg-white mx-2 lg:mx-0 w-full h-full  lg:w-[1280px] lg:h-[700px] drop-shadow-2xl hover:drop-shadow-lg
+         duration-300 ease-in-out rounded-2xl flex flex-col md:flex-row items-center justify-center'>
+            <Animations />
+            <Qa />
+        </section>
+    </main>
   );
 }
 
