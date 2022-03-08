@@ -5,6 +5,7 @@ import box from '../../images/illustration-box-desktop.svg';
 import womanDesktop from '../../images/illustration-woman-online-desktop.svg';
 import Box from "./Box";
 import Pattern from "./Pattern";
+import Woman from "./Woman";
 
 const pattern = {
 	// width: "50%",
@@ -25,12 +26,9 @@ const pattern = {
 
 const Animations = () => {
 	return (
-		<div className="h-full w-full relative">
-			<h1>Animations</h1>
-			{/*<Pattern />*/}
-			{/*<div className="absolute top-28 -left-16">*/}
-			{/*	<img src={womanDesktop} alt=""/>*/}
-			{/*</div>*/}
+		<div className="h-full w-full overflow-hidden flex items-center justify-center">
+			<Pattern />
+			<Woman />
 			{/*<Box/>*/}
 		</div>
 	);
