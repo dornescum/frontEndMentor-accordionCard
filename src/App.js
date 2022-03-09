@@ -13,7 +13,8 @@ function App() {
 		<main className="min-h-screen flex items-center justify-center bg-gradient-to-b from-violet to-myBlue-200
     font-kumbh text-sm z-10">
 			<div onClick={toggleBox} data-testid='box'
-				 className={`${showInfo ? "absolute lg:-left-[4rem] lg:top-[24rem] xl:top-[31rem] xl:-left-4 2xl:top-[29rem]  2xl:left-44 z-10 duration-300 ease-in-out z-10" :
+				 className={`${showInfo ? "absolute lg:-left-[4rem] lg:top-[24rem] xl:top-[31rem] xl:-left-4 2xl:top-[29rem]  2xl:left-44 z-10 duration-300 " +
+					 "ease-in-out z-10" :
 					 "absolute lg:-left-[2rem] lg:top-[24rem] xl:top-[31rem] xl:-left-8 2xl:top-[29rem]  2xl:left-48 z-10 duration-300 ease-in-out"}`}>
 				<Box />
 			</div>

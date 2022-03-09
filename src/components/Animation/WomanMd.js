@@ -1,14 +1,14 @@
 import React from 'react';
 import womanDesktop from "../../images/illustration-woman-online-desktop.svg";
 
-const Woman = () => {
+const WomanMd = () => {
 	return (
-		<div className='relative z-10' data-testid='woman'>
-			<div className="fixed hidden xl:block xl:top-[4rem] xl:-left-[2rem]  2xl:top-[4rem] 2xl:-left-[7rem]">
+		<div className='relative z-10' data-testid='womanMd'>
+			<div className="fixed hidden lg:block lg:top-[8rem] lg:-left-[2rem] xl:hidden">
 				<img src={womanDesktop} alt="woman svg" className='md:-[30rem] 2xl:w-[40rem]'/>
 			</div>
 		</div>
 	);
 };
 
-export default Woman;
+export default WomanMd;
