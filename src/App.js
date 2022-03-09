@@ -1,3 +1,4 @@
+import React from "react";
 import Animations from "./components/Animation/Animations";
 import Qa from "./components/QA/Qa";
 import Box from "./components/Animation/Box";
@@ -13,9 +14,7 @@ function App() {
 			<container className="min-h-screen flex items-center justify-center bg-gradient-to-b from-violet to-myBlue-200
     font-kumbh text-sm z-10">
 				<div onClick={toggleBox} data-testid='box' id='box'
-					 // lg:-left-[4rem] lg:top-[24rem] xl:top-[31rem] xl:-left-4 2xl:top-[29rem]  2xl:left-44
 					 className={`${showInfo ? "absolute duration-300 ease-in-out z-10 active-box hidden 2xl:block" :
-						 // lg:-left-[2rem] lg:top-[24rem] xl:top-[31rem] xl:-left-8 2xl:top-[29rem]  2xl:left-48
 					 "absolute duration-300 ease-in-out z-10 state-box hidden 2xl:block"}`}>
 					<Box />
 				</div>

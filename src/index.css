@@ -4,13 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .state-box{
+    /*background: red;*/
     position: absolute;
     top: 48%;
     left: 10%;
 }
 .active-box{
+    /*background: red;*/
     position: absolute;
     top: 48%;
     left: 12%;
