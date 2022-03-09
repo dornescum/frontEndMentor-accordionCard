@@ -1,17 +1,14 @@
 import React from 'react';
 import Pattern from "./Pattern";
 import Woman from "./Woman";
-import {useResultContext} from "../../context/ActiveContextProvider";
 
 
 const Animations = () => {
-	const {showInfo}=useResultContext();
-	console.log(showInfo);
+
 	return (
-		<div className="h-full w-full overflow-hidden flex items-center justify-center">
+		<div className="h-full w-full overflow-hidden flex items-center justify-center mb-0 mt-24 md:mb-0 md:mt-0">
 			<Pattern />
 			<Woman />
-			{/*<Box/>*/}
 		</div>
 	);
 };

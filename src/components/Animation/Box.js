@@ -1,11 +1,14 @@
 import React from 'react';
 import box from '../../images/illustration-box-desktop.svg';
+import {useResultContext} from "../../context/ActiveContextProvider";
 
 
 const Box = () => {
+	const {toggleBox}=useResultContext();
+
 	return (
-		<div className='absolute top-[26rem] left-44 z-10'>
-			<img src={box} alt="" className=''/>
+		<div onClick={()=>toggleBox()}>
+			<img src={box} alt='orange box' className='z-50 hidden lg:block'/>
 		</div>
 	);
 };
