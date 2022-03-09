@@ -3,3 +3,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.state-box{
+    position: absolute;
+    top: 48%;
+    left: 10%;
+}
+.active-box{
+    position: absolute;
+    top: 48%;
+    left: 12%;
+}
